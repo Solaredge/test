@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>mega uber awesomeness</title>
+	<%=stylesheet_link_tag "index" %>
+</head>
+<body id="application.html">
+	
+  <div id="page">
+  	
+    <div id="heading">
+    	<h1>Mega uber Awesomeness - PUBLIC LAYOUT</h1>
+    </div>
+
+     <div id="middle">
+     	
+       <div id="sidebar">
+          <%=render :partial => "/shared/sidebar"%>
+       </div>
+
+       <div id="main">
+       	
+           <%=yield %>
+
+
+       </div>
+
+     </div>
+
+
+    <div id="footer">
+    	Copyright &copy; Team Awesome
+    </div>
+
+  </div>
+	
+</body>
+</html>
