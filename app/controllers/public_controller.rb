@@ -14,5 +14,8 @@ class PublicController < ApplicationController
 
   def about
   end
+  
+  def tour
+  end
 
 end
